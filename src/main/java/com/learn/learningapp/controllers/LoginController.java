@@ -9,7 +9,6 @@ public class LoginController {
 	
 	@GetMapping("/{number}")
 	public String tableOfNumber(@PathVariable("number") String number) {
-		System.out.println(number);
 		String res = "";
 		int num = Integer.parseInt(number);
 		for(int i=1; i<= 10; i++) {
